@@ -6,8 +6,8 @@
 
 
 .container-custom {
-  width: 150px; /* Fixed width */
-  height: 90px;
+  width: 100px; /* Fixed width */
+  height: 80px;
 }
 
 .SideBarButton:hover { background-color: #50d1f1;
