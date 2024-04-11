@@ -1,0 +1,29 @@
+.pie-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0088fe;
+    font-weight: bold;
+  }
+  
+  .pie-chart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pie-background {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+  }
+  
+  .pie-progress {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#0088fe calc(var(--percentage) * 1%), #e6e6e6 0);
+  }
