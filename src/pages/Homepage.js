@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Components/Navbar';
 import Sidebar from '../Components/Sidebar';
 import Dashboard from '../Components/Dashboard';
@@ -12,6 +12,22 @@ const Homepage = () => {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check the screen size here
+      if (window.innerWidth < 768 && sidebarOpen) {
+        // Close the sidebar if it's open on small screens
+        setSidebarOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [sidebarOpen]);
 
 
   return (
