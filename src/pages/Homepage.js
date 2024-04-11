@@ -19,6 +19,9 @@ const Homepage = () => {
       if (window.innerWidth < 768 && sidebarOpen) {
         // Close the sidebar if it's open on small screens
         setSidebarOpen(false);
+      } else if (window.innerWidth >= 768 && !sidebarOpen) {
+        // Open the sidebar if it's closed on larger screens
+        setSidebarOpen(true);
       }
     };
 
@@ -34,7 +37,7 @@ const Homepage = () => {
     <div className="container-fluid">
       <div className="row">
         <div className={`col-md-2 ${sidebarOpen ? 'd-block' : 'd-none'}`}>
-        <div class="d-flex pt-2 flex-row-reverse" >
+        <div class="d-flex pt-2 flex-row-reverse pt-3" >
           <button class="btn btn-primary" onClick={toggleSidebar}> {sidebarOpen ? <ArrowLeft />: <ArrowRight/>}</button>
         </div>
           <div>

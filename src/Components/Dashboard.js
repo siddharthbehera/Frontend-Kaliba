@@ -6,17 +6,29 @@ import ConversionsChart from '../Components/Cards&Charts/ConversionsChart';
 import ActivityOverview from '../Components/Cards&Charts/ActivityOverview';
 import ProjectsPool from '../Components/Cards&Charts/ProjectsPool';
 
+import backgroundImage from './01.jpg';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Dashboard = () => {
+
+    const divStyle = {
+        backgroundImage: `url(${backgroundImage})`, // Example background image URL
+        backgroundSize: 'cover', // Example background size
+        backgroundPosition: 'center', // Example background position
+        height: '170px', // Example height
+        borderRadius: '10px'
+      };
+
   return (
-    <div className="dashboard">
+    <div>
+    <div className="dashboard" style={divStyle} class="ps-2">
       <div className="row mb-4">
         <div className="col-12">
-          <h1 className="text-primary">Hi Project Admins</h1>
-          <p>We are on a mission to Democratise Renewable energy Investments</p>
+          <h1 className="text-light">Hi Project Admins</h1>
+          <p className="text-light">We are on a mission to Democratise Renewable energy Investments</p>
         </div>
       </div>
       <div className="row mb-4">
@@ -60,6 +72,7 @@ const Dashboard = () => {
         </div>
       </div>
       <ProjectsPool />
+    </div>
     </div>
   );
 };
