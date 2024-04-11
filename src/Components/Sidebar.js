@@ -17,9 +17,9 @@ const Sidebar = () => {
    
   return (
     <div className="sidebar">
-      <div class="d-flex flex-row-reverse">
+      {/* <div class="d-flex flex-row-reverse">
       <button class="btn btn-primary"><ArrowLeft /></button>
-      </div>
+      </div> */}
       <ul className="nav flex-column w-100">
         <li className="nav-item" class="d-flex justify-content-center SideBarButton">
           <a className="nav-link active"  href="#" ><Boxes/> Dashboard</a>
