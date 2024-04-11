@@ -10,8 +10,23 @@
   height: 90px;
 }
 
-.SideBarButton:hover { background-color: #00b3db;
+.SideBarButton:hover { background-color: #50d1f1;
   border-radius: 10px;
-  border-color: blue;
-  color: white;
+  border-color: rgb(5, 5, 88);
+}
+
+/* .nav-link:hover {
+  color: whitesmoke  !important;
+} */
+
+
+.avatar-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #a984ec;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
 }

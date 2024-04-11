@@ -11,6 +11,7 @@ import backgroundImage from './01.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from './Footer';
 
 const Dashboard = () => {
 
@@ -48,20 +49,26 @@ const Dashboard = () => {
           <SalesChart />
         </div>
         <div className="col-md-4">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Website Visitors</h5>
-              <p className="card-text">750K</p>
-            </div>
-          </div>
-          <div className="card mt-4">
-            <div className="card-body">
-              <h5 className="card-title">New Customers</h5>
-              <p className="card-text">7,500</p>
-            </div>
+        <div className="card">
+            <Row>
+                <Col>
+                    <div className="card-body">
+                    <h5 className="card-title">750K</h5>
+                    <p className="card-text">Website Visitors</p>
+                    </div>
+                </Col>
+                <Col>
+                    <div className="card-body">
+                    <h5 className="card-title">7,500</h5>
+                    <p className="card-text">New Customers</p>
+                    </div>
+                 </Col>
+          </Row>
           </div>
           <ActivityOverview />
-        </div>
+          </div>
+          
+        
       </div>
       <div className="row mb-4">
         <div className="col-md-6">
@@ -72,6 +79,7 @@ const Dashboard = () => {
         </div>
       </div>
       <ProjectsPool />
+      <Footer/>
     </div>
     </div>
   );
