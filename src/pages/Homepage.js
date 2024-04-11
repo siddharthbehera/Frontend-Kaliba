@@ -44,7 +44,7 @@ const Homepage = () => {
         <div className={`col-md-${sidebarOpen ? '10' : '12'}`}>
 
         {!sidebarOpen && (
-        <div className="fixed-top" style={{ right: '15px', top: '15px' }}>
+        <div className="fixed-top" style={{ right: '10px', top: '15px' }}>
           <button class="btn btn-primary" onClick={toggleSidebar}>
             <ArrowRight />
           </button>

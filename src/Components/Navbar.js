@@ -27,7 +27,7 @@ const Navbar = () => {
           
         </form> */}
 
-<InputGroup className="w-25" >
+<InputGroup className="w-25 ps-3" >
         <InputGroup.Text id="basic-addon1"><Search/></InputGroup.Text>
         <Form.Control
           placeholder="Search..."
