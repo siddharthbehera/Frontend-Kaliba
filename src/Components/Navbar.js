@@ -3,6 +3,7 @@ import { Search, BellFill, EnvelopeFill,PersonCircle} from 'react-bootstrap-icon
 
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+//import Dropdown from 'react-bootstrap/Dropdown';
 
 const Navbar = () => {
   return (
@@ -49,9 +50,19 @@ const Navbar = () => {
           <div>
             <div class="row">
               <div class="btn-group col-sm">
-                <button  type="button" class="btn btn-light" ><h4 ><BellFill/></h4></button>
-                <button type="button" class="btn btn-light" ><h4><EnvelopeFill/></h4></button>
-                <button type="button" class="btn btn-light" ><h4><PersonCircle/></h4></button>
+                <button  type="button" class="btn btn-light"><h4 ><BellFill style={{ color: '#696969'}}/></h4></button>
+                <button type="button" class="btn btn-light" ><h4><EnvelopeFill style={{ color: '#696969'}}/></h4></button>
+                <button type="button" class="btn btn-light" ><h4><PersonCircle style={{ color: '#696969'}}/></h4></button>
+                {/* <Dropdown>
+                  <Dropdown.Toggle variant="light">
+                  <PersonCircle style={{ color: '#696969'}}/>
+                    <button type="button" class="btn btn-light" ><h4><PersonCircle style={{ color: '#696969'}}/></h4></button>
+                   </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">User Detail</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Logout</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown> */}
               </div>
               <div class="col-sm">
                 <div>Super Admin</div>
