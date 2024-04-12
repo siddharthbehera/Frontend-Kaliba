@@ -1,6 +1,9 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const data = [
   { name: 'Fashion', value: 251 },
   { name: 'Accessories', value: 178 },
@@ -12,7 +15,7 @@ const EarningsChart = () => {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 className="card-title">Earnings</h5>
+        <h3 className="card-title">Earnings</h3>
         <PieChart width={400} height={400}>
           <Pie
             data={data}

@@ -2,7 +2,7 @@ import React from 'react';
 import MetricsCard from '../Components/Cards&Charts/MetricsCard';
 import SalesChart from '../Components/Cards&Charts/SalesChart';
 import EarningsChart from '../Components/Cards&Charts/EarningsChart';
-import ConversionsChart from '../Components/Cards&Charts/ConversionsChart';
+//import ConversionsChart from '../Components/Cards&Charts/ConversionsChart';
 import ActivityOverview from '../Components/Cards&Charts/ActivityOverview';
 import ProjectsPool from '../Components/Cards&Charts/ProjectsPool';
 
@@ -74,9 +74,9 @@ const Dashboard = () => {
         <div className="col-md-6">
           <EarningsChart />
         </div>
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
           <ConversionsChart />
-        </div>
+        </div> */}
       </div>
       <ProjectsPool />
       <Footer/>
